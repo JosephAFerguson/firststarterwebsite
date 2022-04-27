@@ -1,0 +1,130 @@
+/*vars for color*/
+:root{
+    --red: rgb(167, 177, 187);/*--red is for color*/
+    --BGre: rgb(16, 42, 67);
+    --VL: rgb(136, 153, 168);
+}
+*{/*reset styles */
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+html{
+    color: var(--red);
+    background-color: rgba(0, 0, 0, 0.90);
+}
+header{
+    border-bottom: 8px solid var(--BGre);
+    border-right: 8px solid var(--BGre);
+    height: 40px;
+}
+header h1{
+    width: 80px;
+    position: fixed;
+    left: calc(100% / 2 - 80px);/*width of h1 element*/
+}
+div.menuicon{
+    float: left;
+    margin-left: 1%;
+}
+div.bar1, div.bar2, div.bar3{
+    width: 35px;
+    height: 5px;
+    background-color: var(--red);
+    margin: 6px 0;
+}
+header, nav{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.90);
+    position: fixed;
+    z-index: 1;
+}
+nav{
+    top: 43px;
+    left: 0;
+}
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navbar{
+    border-right: 8px var(--BGre);
+    border-bottom: 8px var(--BGre);
+    border-left: 1px var(--BGre);
+    border-style: ridge;
+    width: 12.5%;
+    color: var(--red);
+}
+ul{
+    list-style-type: none;
+}
+li a{
+    padding-left: 10%;
+    padding-right: 12.5%;
+    border: 2px solid var(--BGre);
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+}
+li a:visited{
+    color: var(--VL);
+}
+li a:hover{
+    border-radius: 2em;
+    font-style: italic;
+    border: 3px solid var(--red);
+}
+/* learned from w3 school*/
+@keyframes mymove1{
+    100% {-webkit-transform: rotate(-45deg) translate(-9px, 6px);}
+    100% {transform: rotate(-45deg) translate(-9px, 6px) ;}
+}
+@keyframes mymove3{
+    100% {-webkit-transform: rotate(45deg) translate(-8px, -8px);}
+    100% {transform: rotate(45deg) translate(-8px, -8px) ;}
+}
+@keyframes mymoveback1{
+    0% {-webkit-transform: rotate(-45deg) translate(-9px, 6px);}
+    0% {transform: rotate(-45deg) translate(-9px, 6px) ;}
+    100% {-webkit-transform: rotate(0deg) translate(9px, -6px);}
+    100% {transform: rotate(0deg) translate(0px, 0px) ;}
+}
+@keyframes mymoveback3{
+    0% {-webkit-transform: rotate(45deg) translate(-8px, -8px);}
+    0% {transform: rotate(45deg) translate(-8px, -8px) ;}
+    100% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+    100% {transform: rotate(0deg) translate(0px, 0px) ;}
+}
+.change .bar1 {
+    animation-name: mymove1;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    animation-name: mymove3;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+.changeback .bar1{
+    animation-name: mymoveback1;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+.changeback .bar3{
+    animation-name: mymoveback3;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+article{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+.Calculator label{
+    display: block;
+    top: 45%;
+}

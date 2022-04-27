@@ -1,0 +1,6 @@
+fieldset{
+    position: fixed;
+    width: 200px;
+    left: calc(100% / 2 - 100px);
+    top: 30%;
+}

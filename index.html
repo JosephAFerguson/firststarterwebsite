@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id="title">Joe's Calculators</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="buildforhtml.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-menu-container">
+                <div class="menuicon">
+                    <div class="bar1" id="1"></div>
+                    <div class="bar2" id="2"></div>
+                    <div class="bar3" id="3"></div>
+                </div>
+                <h1>WELCOME</h1>
+                <button class="SUbutton">SIGN UP</button>
+                <nav class="navbar">
+                    <ul>
+                        <li class="calc1"><a href="calc1.html">First Calculator</a></li>
+                        <li class="calc2"><a href="calc2.html">Second Calculator</a></li>
+                        <li class="calc3"><a href="calc3.html">Third Calculator</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <article>
+            <form class="Calculator" action="#" method="post">
+                <label>This number squared is:</label>
+                <input type="number">
+                <input type="submit" value="submit">
+            </form>
+        </article>
+    </div>
+    <fieldset class="hide" id="SIGNUP">
+        <h1 id="SUMESS">SIGN UP!</h1>
+        <form id="nameEmail">
+            <label id="_name" for="name">Name: </label>
+            <input type="text" id="name" name="username" placeholder="Please Enter Your Name">
+            <label id="_email" for="email">Email: </label>
+            <input type="email" id="email" name="user_email" placeholder="Please Enter Your Email">
+            <input type="submit" id="button" value="ENTER">
+        </form>
+    </fieldset>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="build.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
